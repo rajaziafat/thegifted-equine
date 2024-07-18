@@ -12,7 +12,11 @@ export default {
       sm: { max: "540px" },
       xsm: { max: "385px" },
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#634832",
+      },
+    },
   },
   plugins: [],
 };

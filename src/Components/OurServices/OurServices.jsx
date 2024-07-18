@@ -4,7 +4,7 @@ const OurServices = () => {
   return (
     <div className="py-20 flex flex-col gap-y-6 items-center">
       <h1 className="text-4xl font-semibold uppercase">Our Services</h1>
-      <p className="text-2xl w-7/12 text-center leading-normal">
+      <p className="text-2xl w-7/12 text-center leading-normal md:w-11/12 md:text-xl">
         At Sweet Mercies Rescue Ranch, we are dedicated to helping animals in
         need get the love and care they deserve.
         <br />

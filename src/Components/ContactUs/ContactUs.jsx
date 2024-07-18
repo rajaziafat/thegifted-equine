@@ -12,8 +12,8 @@ const ContactUs = () => {
           <Formik className="w-full">
             {(formik) => {
               return (
-                <Form className="w-[600px]">
-                  <div className="flex w-full gap-4">
+                <Form className="w-[600px] md:w-full">
+                  <div className="flex w-full gap-4 sm:flex-col">
                     <div className="flex w-full flex-col gap-y-2">
                       <label htmlFor="">First Name</label>
                       <Field
