@@ -5,20 +5,20 @@ import OurServices from "../Components/OurServices/OurServices";
 import ProductsSection from "../Components/ProductsSection/ProductsSection";
 import Gallery from "./Gallery";
 import Hero from "./Hero";
+import MeetOurTeam from "./MeetOurTeam";
 import RecentStories from "./RecentStories";
 const Home = () => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <Hero />
       <OurMission />
       <ProductsSection heading="Meet Our Equines" btnText="Meet All Enquies" />
 
       <OurServices />
-      <ProductsSection heading="Meet Our Dogs" btnText="Meet All Dogs" />
-      <RecentStories />
-      <ProductsSection heading="Meet Our Animals" btnText="Meet All Animals" />
+      {/* <RecentStories /> */}
       <ContactUs />
+      <MeetOurTeam />
       <Gallery />
     </>
   );

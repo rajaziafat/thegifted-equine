@@ -2,21 +2,17 @@ import Button from "../Button/Button";
 import ProductsCard from "../ProductsCard/ProductsCard";
 import Heading from "../Heading/Heading";
 import Helmet from "../Helmet/Helmet";
+import Horses from "../../Data/Horses";
 
 const ProductsSection = (props) => {
   return (
-    <div className="py-20 bg-[#634832]">
+    <div className="py-20 bg-primary">
       <Helmet>
         <Heading text={props.heading} className="text-white" />
         <div className="mt-20 flex flex-wrap justify-center gap-10">
-          <ProductsCard />
-          <ProductsCard />
-          <ProductsCard />
-          <ProductsCard />
-          <ProductsCard />
-          <ProductsCard />
-          <ProductsCard />
-          <ProductsCard />
+          {Horses.map((item) => {
+            return <ProductsCard key={item.id} {...item} />;
+          })}
         </div>
         <div className="flex justify-center mt-10">
           <Button

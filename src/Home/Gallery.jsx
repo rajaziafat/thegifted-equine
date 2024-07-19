@@ -29,28 +29,28 @@ const Gallery = () => {
           className="mySwiper w-full h-full"
         >
           <SwiperSlide className="!w-[300px] h-[350px]">
-            <GalleryCards img="./s1.webp" />
+            <GalleryCards img="./p4.webp" />
           </SwiperSlide>
           <SwiperSlide className="!w-[300px] h-[350px]">
-            <GalleryCards img="./s1.webp" />
+            <GalleryCards img="./p7.webp" />
           </SwiperSlide>
           <SwiperSlide className="!w-[300px] h-[350px]">
-            <GalleryCards img="./s1.webp" />
+            <GalleryCards img="./p10.webp" />
           </SwiperSlide>
           <SwiperSlide className="!w-[300px] h-[350px]">
-            <GalleryCards img="./s1.webp" />
+            <GalleryCards img="./p12.webp" />
           </SwiperSlide>
           <SwiperSlide className="!w-[300px] h-[350px]">
-            <GalleryCards img="./s1.webp" />
+            <GalleryCards img="./p14.webp" />
           </SwiperSlide>
           <SwiperSlide className="!w-[300px] h-[350px]">
-            <GalleryCards img="./s1.webp" />
+            <GalleryCards img="./p17.webp" />
           </SwiperSlide>
           <SwiperSlide className="!w-[300px] h-[350px]">
-            <GalleryCards img="./s1.webp" />
+            <GalleryCards img="./p21.webp" />
           </SwiperSlide>
           <SwiperSlide className="!w-[300px] h-[350px]">
-            <GalleryCards img="./s1.webp" />
+            <GalleryCards img="./p22.webp" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -60,7 +60,7 @@ const Gallery = () => {
 const GalleryCards = (props) => {
   return (
     <div className="w-[300px] h-[350px] overflow-hidden rounded-md">
-      <img src={props.img} alt="" className="h-full object-cover" />
+      <img src={props.img} alt="" className="h-full w-full object-cover" />
     </div>
   );
 };
