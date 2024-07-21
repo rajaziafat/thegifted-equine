@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Button from "../Button/Button";
 import Helmet from "../Helmet/Helmet";
 import {
   fadeInFromLeft,
@@ -32,11 +31,6 @@ const OurMission = () => {
           </motion.div>
         </div>
       </Helmet>
-      <Button
-        delay={0.7}
-        text="Learn More"
-        className=" bg-black text-white border-white rounded-md text-lg hover:bg-white hover:text-black duration-300 hover:border-black border"
-      />
     </div>
   );
 };

@@ -5,11 +5,20 @@ import { fadeInFromLeft } from "../utils/helpers/Animation/Animation";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen bg-[url('/hero.jpg')] w-full bg-cover bg-center relative flex justify-start items-center pb-10 pl-20 pt-20">
+    <div className="min-h-screen  w-full bg-cover bg-center relative flex justify-start items-center pb-10 pl-20 pt-20">
+      {/* <div className="min-h-screen bg-[url('/hero.jpg')] w-full bg-cover bg-center relative flex justify-start items-center pb-10 pl-20 pt-20"> */}
       <div className="absolute top-0 left-0 w-full z-30">
         <NavBar />
       </div>
-      <div className="absolute top-0 left-0 min-h-screen bg-black/25 w-full"></div>
+      <video
+        src="./Video.mov"
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        playsInline=""
+        autoPlay
+        muted
+        loop
+      ></video>
+      <div className="absolute top-0 left-0 min-h-screen bg-black/65 w-full"></div>
       <div className="relative z-20 flex flex-col items-start gap-y-7 w-[700px]">
         <motion.h1
           {...fadeInFromLeft(0.3)}

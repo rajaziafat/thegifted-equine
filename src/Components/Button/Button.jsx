@@ -5,7 +5,7 @@ const Button = (props) => {
   return (
     <motion.button
       {...fadeInFromLeft(props.delay)}
-      className={`h-[50px] min-w-[200px] ${props.className}`}
+      className={`h-[50px] min-w-[200px] font-bold ${props.className}`}
     >
       {props.text}
     </motion.button>
