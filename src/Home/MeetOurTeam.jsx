@@ -55,12 +55,12 @@ const TeamsCard = (props) => {
         <img
           src={props.img}
           alt=""
-          className="rounded-md w-full h-full object-cover"
+          className="rounded-md w-full h-full object-cover hover:scale-105 duration-300"
         />
       </div>
-      <div className="flex items-center flex-col py-6">
-        <h3 className="text-xl font-medium">{props.name}</h3>
-        <h5 className="text-[#a55513]">{props.desig}</h5>
+      <div className="flex items-center flex-col py-6 bg-gray-100 shadow-lg w-10/12 mx-auto rounded-xl -translate-y-10">
+        <h3 className="text-xl font-bold">{props.name}</h3>
+        <h5 className="text-[#a55513] font-semibold">{props.desig}</h5>
       </div>
     </motion.div>
   );

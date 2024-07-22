@@ -11,7 +11,7 @@ const ProductsCard = (props) => {
         <img
           src={props.img}
           alt=""
-          className="h-[350px] w-full duration-300 hover:scale-110"
+          className="h-[350px] w-full duration-300 object-cover hover:scale-110"
         />
       </div>
       <div className="bg-white h-14 flex justify-center items-center">
