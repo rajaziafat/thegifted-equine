@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Button from "../Components/Button/Button";
 import NavBar from "../Components/NavBar/NavBar";
 import { fadeInFromLeft } from "../utils/helpers/Animation/Animation";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -32,11 +33,14 @@ const Hero = () => {
           Have you ever wanted to rescue an abused horse? Shower a neglected
           mini with love? Adopt a thoroughbred whose racing days are long past?
         </motion.h2>
-        <Button
-          delay={0.5}
-          text="Get Involved"
-          className="text-white sm:h-[40px] sm:w-32 hover:border-black hover:bg-black duration-300  rounded-md text-lg border border-white "
-        />
+        <Link
+          offset={-100}
+          to="donate"
+          smooth={true}
+          className="text-white sm:h-[40px] sm:w-32 hover:border-black hover:bg-black duration-300  rounded-md text-lg border border-white w-36 h-12 flex justify-center items-center cursor-pointer"
+        >
+          Donate
+        </Link>
       </div>
     </div>
   );

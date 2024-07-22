@@ -3,8 +3,10 @@ import Helmet from "../Components/Helmet/Helmet";
 
 const Donate = () => {
   return (
-    <div className="py-10 mb-10 donate">
+    <div className="py-20 mb-10 donate bg-gray-300">
       <Helmet>
+        <Heading text="Donate" />
+        <br />
         <Heading text="Thank you for your contributions - “to us you’re more than a number”" />
         <div className="flex mt-16 flex-wrap gap-10 justify-center">
           <DonateCard img={1} link="" title="Paypal" />
