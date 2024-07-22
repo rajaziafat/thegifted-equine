@@ -71,7 +71,7 @@ const Footer = () => {
             &copy;
             {new Date().getFullYear()}
           </span>
-          Copyrights.All rights are resered by The Gifted Enquine
+          Copyrights.All rights are resered by The Gifted Equine
         </p>
       </footer>
     </>

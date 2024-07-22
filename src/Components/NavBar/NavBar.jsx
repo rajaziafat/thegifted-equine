@@ -129,7 +129,7 @@ const NavBar = () => {
                 to="enquies"
                 className="flex items-center cursor-pointer gap-2 bg-black text-white rounded-3xl h-[45px] w-[180px] justify-center hover:bg-white border-black border-2 duration-300 hover:text-black"
               >
-                Enquies Enquies
+                Equines
               </Link>
             </li>
           </ul>
@@ -255,7 +255,7 @@ const NavBar = () => {
                 to="enquies"
                 className="flex items-center cursor-pointer gap-2 bg-black text-white rounded-3xl h-[45px] w-[180px] justify-center hover:bg-white border-black border-2 duration-300 hover:text-black"
               >
-                Enquies Enquies
+                Equines
               </Link>
             </li>{" "}
           </ul>
