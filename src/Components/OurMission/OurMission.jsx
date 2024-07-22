@@ -21,13 +21,18 @@ const OurMission = () => {
               {...fadeInFromLeft(0.4)}
               className="text-2xl w-full text-center leading-normal md:w-11/12 md:text-xl sm:w-full"
             >
-              At Sweet Mercies Rescue Ranch, we crave to save as many neglected
-              animals as we can. Our goal is to rescue, rehabilitate, and show
-              them the love they deserve before finding their forever homes.
+              The Gifted Equine Foundation equine-therapy program is
+              specifically tailored to rescue horses that rescue humans. Program
+              supports veterans, current military members seeking R&R after TDY
+              or deployments, First Responders and individuals dealing with
+              PTSD, anxiety, and other related conditions. This program aims to
+              harness the healing power of horses and their unique connection
+              with humans to provide a safe and nurturing environment for
+              individuals to recover and heal
             </motion.p>
           </div>
           <motion.div {...fadeInFromRight(0.6)} className="w-1/2 md:w-full">
-            <img src="./mission.jpg" className="rounded-md" alt="" />
+            <img src="./mission.png" className="rounded-md" alt="" />
           </motion.div>
         </div>
       </Helmet>

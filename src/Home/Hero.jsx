@@ -22,16 +22,16 @@ const Hero = () => {
         playsInline
       ></video>
       <div className="absolute top-0 left-0 min-h-screen bg-black/65 w-full"></div>
-      <div className="relative z-20 flex flex-col items-center gap-y-7 w-[700px] md:w-11/12 mx-auto  md:text-center">
+      <div className="relative z-20 flex flex-col items-center gap-y-7 w-[700px] md:w-11/12 mx-auto  text-center">
         <motion.h1
           {...fadeInFromLeft(0.3)}
           className="text-white font-semibold text-6xl sm:text-4xl uppercase"
         >
-          We Make Miracles
+          We Are Saving & Changing Lives
         </motion.h1>
         <motion.h2 {...fadeInFromLeft(0.5)} className="text-xl text-white ">
-          Have you ever wanted to rescue an abused horse? Shower a neglected
-          mini with love? Adopt a thoroughbred whose racing days are long past?
+          The Gifted Equine provides a loving home to abused horses & we need
+          your help.
         </motion.h2>
         <Link
           offset={-100}

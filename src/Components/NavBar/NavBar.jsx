@@ -24,14 +24,15 @@ const NavBar = () => {
     <>
       <nav className="flex justify-center items-center h-24 shadow-xl bg-[#FFFFFFA6] sticky top-0 left-0 w-full">
         <div className="flex justify-between w-11/12">
-          <span className="">
+          <Link to="hero" smooth={true} className="cursor-pointer">
             <motion.img
               {...fadeInFromLeft()}
               src="./Logo.png"
               className="w-20 h-20 object-contain"
               alt=""
             />
-          </span>
+          </Link>
+
           <ul className="flex gap-4 items-center lg:hidden ">
             <li>
               <Link
@@ -113,6 +114,7 @@ const NavBar = () => {
             <li>
               <Link
                 onClick={closeSideBar}
+                to=""
                 className="flex items-center cursor-pointer gap-2 bg-black text-white rounded-3xl h-[45px] w-[130px] justify-center hover:bg-white border-black border-2 duration-300 hover:text-black"
               >
                 Merch
@@ -239,6 +241,7 @@ const NavBar = () => {
             <li>
               <Link
                 onClick={closeSideBar}
+                to=""
                 className="flex items-center cursor-pointer gap-2 bg-black text-white rounded-3xl h-[45px] w-[130px] justify-center hover:bg-white border-black border-2 duration-300 hover:text-black"
               >
                 Merch
