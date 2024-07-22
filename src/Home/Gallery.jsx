@@ -53,14 +53,13 @@ import { FaPlay } from "react-icons/fa";
 
 const Gallery = () => {
   return (
-    <div className="pb-10">
+    <div className="pb-10 gallery">
       <Helmet>
         <Heading text="Gallery" />
-        <div className="w-full mt-16 flex flex-wrap">
+        <div className="w-full mt-16 flex flex-wrap sm:gap-y-5">
           {[0, 4, 8, 12].map((startIdx) => (
             <div
-              className="flex flex-col gap-y-5"
-              style={{ flex: "25%" }}
+              className="flex flex-col gap-y-5 gallery-col lg:items-center"
               key={startIdx}
             >
               {GalleryData.slice(startIdx, startIdx + 4)?.map((item) => (
@@ -84,7 +83,7 @@ const GalleryCards = (props) => {
   };
   return (
     <div
-      className={`w-[330px] relative ${props.height}`}
+      className={`w-[330px] xsm:w-full relative ${props.height}`}
       onClick={() => openInNewWindow(props.source)}
       style={{ cursor: "pointer" }}
     >

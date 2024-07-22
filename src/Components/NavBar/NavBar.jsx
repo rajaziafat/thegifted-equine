@@ -1,6 +1,6 @@
 import { CiMenuFries } from "react-icons/ci";
 import { IoBagHandleSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import useScrollLock from "../../Hooks/UseScrollLock";
 import { useRef, useState } from "react";
 import useClickOutsideDetector from "../../Hooks/useClickOutsideDetector";
@@ -16,9 +16,13 @@ const NavBar = () => {
   useClickOutsideDetector(ref, () => {
     setIsSidebarOpen(false);
   });
+
+  const closeSideBar = () => {
+    setIsSidebarOpen(false);
+  };
   return (
     <>
-      <nav className="flex justify-center items-center h-24 shadow-xl bg-[#FFFFFFA6]">
+      <nav className="flex justify-center items-center h-24 shadow-xl bg-[#FFFFFFA6] sticky top-0 left-0 w-full">
         <div className="flex justify-between w-11/12">
           <span className="">
             <motion.img
@@ -28,14 +32,106 @@ const NavBar = () => {
               alt=""
             />
           </span>
-          <div className="flex items-center gap-5 text-2xl">
-            {/* <IoPersonCircleOutline className="text-3xl" /> */}
-            {/* <Link className="flex sm:hidden items-center gap-2 bg-black text-white rounded-3xl h-[45px] w-[130px] justify-center hover:bg-white hover:border-black border-2 duration-300 hover:text-black">
-              <span className="text-base">Log In</span>
-            </Link> */}
-            {/* <button className="text-3xl">
-              <IoBagHandleSharp />
-            </button> */}
+          <ul className="flex gap-4 items-center lg:hidden ">
+            <li>
+              <Link
+                onClick={closeSideBar}
+                to="hero"
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                smooth={true}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={closeSideBar}
+                to="about"
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                smooth={true}
+                offset={-100}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={closeSideBar}
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                smooth={true}
+                to="howcanyouhelp"
+                offset={-100}
+              >
+                How You can help
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={closeSideBar}
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                smooth={true}
+                to="donate"
+                offset={-100}
+              >
+                Donate
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={closeSideBar}
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                smooth={true}
+                to="gallery"
+                offset={-100}
+              >
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={closeSideBar}
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                to="team"
+                smooth={true}
+                offset={-100}
+              >
+                Meet Our Team
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                onClick={closeSideBar}
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                smooth={true}
+                offset={-100}
+                to="contact"
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={closeSideBar}
+                className="flex items-center cursor-pointer gap-2 bg-black text-white rounded-3xl h-[45px] w-[130px] justify-center hover:bg-white border-black border-2 duration-300 hover:text-black"
+              >
+                Merch
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                onClick={closeSideBar}
+                offset={-100}
+                smooth={true}
+                to="enquies"
+                className="flex items-center cursor-pointer gap-2 bg-black text-white rounded-3xl h-[45px] w-[180px] justify-center hover:bg-white border-black border-2 duration-300 hover:text-black"
+              >
+                Enquies Enquies
+              </Link>
+            </li>
+          </ul>
+          <div className=" items-center gap-5 text-2xl hidden lg:flex">
             <motion.button
               {...fadeInFromLeft(0.2)}
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
@@ -44,7 +140,7 @@ const NavBar = () => {
             </motion.button>
           </div>
         </div>
-        {/* Slide Menu */}
+        {/* Slide Menu  For Small Devices*/}
 
         <div
           className={`fixed h-full top-0 left-0 w-full   bg-black/65  duration-300 ${
@@ -52,7 +148,7 @@ const NavBar = () => {
           }`}
         ></div>
         <div
-          className={`fixed z-30 top-0 right-0 h-full bg-white overflow-y-scroll duration-300 w-[400px] ${
+          className={`fixed z-30 top-0 right-0 hidden lg:block h-full bg-white overflow-y-scroll duration-300 w-[400px] ${
             isSidebarOpen ? "-translate-x-0" : "translate-x-[400px]"
           }`}
           ref={ref}
@@ -65,38 +161,100 @@ const NavBar = () => {
           </button>
           <ul className="flex flex-col gap-y-8 items-center w-full justify-center h-full">
             <li>
-              <Link>Home</Link>
+              <Link
+                onClick={closeSideBar}
+                to="hero"
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                smooth={true}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link>About</Link>
+              <Link
+                onClick={closeSideBar}
+                to="about"
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                smooth={true}
+                offset={-100}
+              >
+                About
+              </Link>
             </li>
             <li>
-              <Link>Donate</Link>
+              <Link
+                onClick={closeSideBar}
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                smooth={true}
+                to="howcanyouhelp"
+                offset={-100}
+              >
+                How You can help
+              </Link>
             </li>
             <li>
-              <Link>Gallery</Link>
+              <Link
+                onClick={closeSideBar}
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                smooth={true}
+                to="donate"
+                offset={-100}
+              >
+                Donate
+              </Link>
             </li>
             <li>
-              <Link>How You can help</Link>
+              <Link
+                onClick={closeSideBar}
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                smooth={true}
+                to="gallery"
+                offset={-100}
+              >
+                Gallery
+              </Link>
             </li>
             <li>
-              <Link>Meet Our Team</Link>
+              <Link
+                onClick={closeSideBar}
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                to="team"
+                smooth={true}
+                offset={-100}
+              >
+                Meet Our Team
+              </Link>
             </li>
             <li>
-              <Link className="flex items-center gap-2 bg-black text-white rounded-3xl h-[45px] w-[130px] justify-center hover:bg-white border-black border-2 duration-300 hover:text-black">
+              <Link
+                onClick={closeSideBar}
+                className="cursor-pointer font-bold hover:text-gray-600 duration-300"
+                smooth={true}
+                offset={-100}
+                to="contact"
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={closeSideBar}
+                className="flex items-center cursor-pointer gap-2 bg-black text-white rounded-3xl h-[45px] w-[130px] justify-center hover:bg-white border-black border-2 duration-300 hover:text-black"
+              >
                 Merch
               </Link>
             </li>
             <li>
-              <Link className="flex items-center gap-2 bg-black text-white rounded-3xl h-[45px] w-[180px] justify-center hover:bg-white border-black border-2 duration-300 hover:text-black">
+              <Link
+                onClick={closeSideBar}
+                offset={-100}
+                smooth={true}
+                to="enquies"
+                className="flex items-center cursor-pointer gap-2 bg-black text-white rounded-3xl h-[45px] w-[180px] justify-center hover:bg-white border-black border-2 duration-300 hover:text-black"
+              >
                 Enquies Enquies
               </Link>
-            </li>
-            <li className="hidden sm:block">
-              <Link className="flex items-center gap-2 bg-black text-white rounded-3xl h-[45px] w-[130px] justify-center hover:bg-white hover:border-black border-2 duration-300 hover:text-black">
-                <span className="text-base">Log In</span>
-              </Link>
-            </li>
+            </li>{" "}
           </ul>
         </div>
       </nav>

@@ -6,7 +6,7 @@ import Horses from "../../Data/Horses";
 
 const ProductsSection = (props) => {
   return (
-    <div className="py-20 bg-primary">
+    <div className="py-20 bg-primary enquies">
       <Helmet>
         <Heading text={props.heading} className="text-white" />
         <div className="mt-20 flex flex-wrap justify-center gap-10">

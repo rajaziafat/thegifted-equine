@@ -7,7 +7,7 @@ import {
 
 const OurMission = () => {
   return (
-    <div className="py-20 flex flex-col gap-y-6 items-center ">
+    <div className="py-20 flex flex-col gap-y-6 items-center sm:pt-0 ">
       <motion.h1
         {...fadeInFromLeft(0.3)}
         className="text-4xl font-semibold uppercase text-primary"
@@ -19,7 +19,7 @@ const OurMission = () => {
           <div className="w-1/2 md:w-full">
             <motion.p
               {...fadeInFromLeft(0.4)}
-              className="text-2xl w-full text-center leading-normal md:w-11/12 md:text-xl"
+              className="text-2xl w-full text-center leading-normal md:w-11/12 md:text-xl sm:w-full"
             >
               At Sweet Mercies Rescue Ranch, we crave to save as many neglected
               animals as we can. Our goal is to rescue, rehabilitate, and show

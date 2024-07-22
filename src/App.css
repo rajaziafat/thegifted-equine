@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .gallery-col {
+    flex: 25%;
+  }
+}
+
+@media (width <= 1024px) {
+  .gallery-col {
+    flex: 20%;
+  }
+}
+@media (width <= 540px) {
+  .gallery-col {
+    flex: 100%;
+  }
+}

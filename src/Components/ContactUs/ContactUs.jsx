@@ -8,11 +8,11 @@ import { Parallax } from "react-scroll-parallax";
 
 const ContactUs = () => {
   return (
-    <div className="py-20">
+    <div className="py-20 contact">
       <Helmet>
         <Heading text="Contact Us" />
         <div className="flex gap-10">
-          <div className="w-5/12 flex relative">
+          <div className="w-5/12 flex relative lg:hidden">
             <Parallax translateY={[-10, 30]}>
               <img
                 src="./contact1.png"
@@ -30,7 +30,7 @@ const ContactUs = () => {
               </Parallax>
             </div>
           </div>
-          <div className="flex justify-center  my-10 flex-col items-center w-7/12 mx-auto shadow-[0px_2px_20px_0px_rgba(0,0,0,0.05)] border border-[#D9D9D9] rounded-2xl md:w-full py-10">
+          <div className="flex justify-center  my-10 flex-col items-center w-7/12 mx-auto shadow-[0px_2px_20px_0px_rgba(0,0,0,0.05)] border border-[#D9D9D9] rounded-2xl md:w-full py-10 lg:w-9/12 lg:px-10 sm:px-3">
             <Formik>
               {(formik) => {
                 return (

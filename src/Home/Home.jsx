@@ -3,6 +3,7 @@ import NavBar from "../Components/NavBar/NavBar";
 import OurMission from "../Components/OurMission/OurMission";
 import ProductsSection from "../Components/ProductsSection/ProductsSection";
 import AboutUs from "./AboutUs";
+import Donate from "./Donate";
 import Gallery from "./Gallery";
 import Hero from "./Hero";
 import HowCanYouHelp from "./HowCanYouHelp";
@@ -11,13 +12,13 @@ import RecentStories from "./RecentStories";
 const Home = () => {
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
       <Hero />
       <AboutUs />
       <OurMission />
       <ProductsSection heading="Meet Our Equines" btnText="Meet All Enquies" />
       <HowCanYouHelp />
-
+      <Donate />
       {/* <RecentStories /> */}
       <Gallery />
       <ContactUs />

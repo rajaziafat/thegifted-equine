@@ -5,7 +5,7 @@ import Heading from "../Components/Heading/Heading";
 
 const MeetOurTeam = () => {
   return (
-    <div className="py-20">
+    <div className="py-20 team sm:pt-0">
       <Heading text="Meet Our Team" />
       <Helmet>
         <div className="flex flex-wrap mt-10 gap-16 justify-center">

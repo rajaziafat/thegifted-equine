@@ -3,10 +3,10 @@ import Helmet from "../Components/Helmet/Helmet";
 
 const AboutUs = () => {
   return (
-    <div className="py-20">
+    <div className="py-20 about">
       <Helmet>
         <Heading text="About Us" />
-        <p className="text-xl text-center leading-relaxed px-20 mt-10">
+        <p className="text-xl text-center leading-relaxed px-20 mt-10 sm:px-0">
           At The Gifted Equine (501c3 Nonprofit), we are dedicated to saving
           horses from the slaughter pipeline and other neglectful situations and
           providing them with the respect and high-quality care they deserve. We
