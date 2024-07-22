@@ -1,4 +1,5 @@
 import ContactUs from "../Components/ContactUs/ContactUs";
+import Footer from "../Components/Footer/Footer";
 import NavBar from "../Components/NavBar/NavBar";
 import OurMission from "../Components/OurMission/OurMission";
 import ProductsSection from "../Components/ProductsSection/ProductsSection";
@@ -8,7 +9,6 @@ import Gallery from "./Gallery";
 import Hero from "./Hero";
 import HowCanYouHelp from "./HowCanYouHelp";
 import MeetOurTeam from "./MeetOurTeam";
-import RecentStories from "./RecentStories";
 const Home = () => {
   return (
     <>
@@ -19,10 +19,10 @@ const Home = () => {
       <ProductsSection heading="Meet Our Equines" btnText="Meet All Enquies" />
       <HowCanYouHelp />
       <Donate />
-      {/* <RecentStories /> */}
       <Gallery />
       <ContactUs />
       <MeetOurTeam />
+      <Footer />
     </>
   );
 };

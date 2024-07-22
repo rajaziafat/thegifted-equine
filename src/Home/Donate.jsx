@@ -58,7 +58,7 @@ const DonateCard = (props) => {
     <div className="flex flex-col gap-y-6 bg-white items-center p-8 sm:p-6 sm:w-[300px] shadow-lg rounded-xl border">
       <img
         src={`d${props.img}.png`}
-        className="w-36 h-36 sm:w-32 sm:h-32 object-contain"
+        className="w-52 h-52 sm:w-32 sm:h-32 object-contain"
         alt=""
       />
       <h3 className="text-2xl">{props.title}</h3>

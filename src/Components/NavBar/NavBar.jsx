@@ -23,7 +23,7 @@ const NavBar = () => {
   return (
     <>
       <nav className="flex justify-center items-center h-24 shadow-xl bg-[#FFFFFFA6] sticky top-0 left-0 w-full">
-        <div className="flex justify-between w-11/12">
+        <div className="flex justify-between w-11/12 max-w-[1400px]">
           <Link to="hero" smooth={true} className="cursor-pointer">
             <motion.img
               {...fadeInFromLeft()}

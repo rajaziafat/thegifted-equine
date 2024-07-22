@@ -83,7 +83,7 @@ const GalleryCards = (props) => {
   };
   return (
     <div
-      className={`w-[330px] xsm:w-full relative ${props.height}`}
+      className={`w-[330px] h-[500px] xsm:w-full relative ${props.height}`}
       onClick={() => openInNewWindow(props.source)}
       style={{ cursor: "pointer" }}
     >

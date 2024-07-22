@@ -3,7 +3,7 @@ const GalleryData = [
     id: 1,
     img: "/g1.jpeg",
     source: `https://www.instagram.com/reel/CseFi17vk9y/embed`,
-    height: "h-[500px]",
+    height: "!h-[400px]",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const GalleryData = [
     id: 3,
     img: "/g3.jpeg",
     source: "https://www.instagram.com/reel/CsW5id7A0Qm/embed",
-    height: "h-[500px]",
+    height: "!h-[400px]",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const GalleryData = [
     id: 6,
     img: "/g6.jpeg",
     source: "https://www.instagram.com/reel/CsB0ObeuCg0/embed",
-    height: "h-[500px]",
+    height: "!h-[400px]",
   },
   {
     id: 7,
@@ -45,13 +45,13 @@ const GalleryData = [
     id: 8,
     img: "/g8.jpeg",
     source: "https://www.instagram.com/reel/Cr90u_gookr/embed",
-    height: "h-[500px]",
+    height: "!h-[400px]",
   },
   {
     id: 9,
     img: "/g9.jpeg",
     source: "https://www.instagram.com/reel/Cr6ajXBAzH6/embed",
-    height: "h-[500px]",
+    height: "!h-[400px]",
   },
   {
     id: 10,
@@ -63,7 +63,7 @@ const GalleryData = [
     id: 11,
     img: "/g11.jpeg",
     source: "https://www.instagram.com/reel/CrlIGVwuGS4/embed",
-    height: "h-[500px]",
+    height: "!h-[400px]",
   },
   {
     id: 12,
@@ -81,7 +81,7 @@ const GalleryData = [
     id: 14,
     img: "/g14.jpeg",
     source: "https://www.instagram.com/reel/CrVtCcNO5du/embed",
-    height: "h-[500px]",
+    height: "!h-[400px]",
   },
   {
     id: 15,
@@ -93,7 +93,7 @@ const GalleryData = [
     id: 16,
     img: "/g16.jpeg",
     source: "https://www.instagram.com/reel/CrRHq2ZOiVY/embed",
-    height: "h-[500px]",
+    height: "!h-[400px]",
   },
 ];
 
