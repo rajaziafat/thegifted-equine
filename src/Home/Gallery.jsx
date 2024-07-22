@@ -16,11 +16,7 @@ const Gallery = () => {
               key={startIdx}
             >
               {GalleryData.slice(startIdx, startIdx + 4)?.map((item) => (
-                <GalleryCards
-                  key={item.id}
-                  {...item}
-                  onClick={() => openModal(item.source)}
-                />
+                <GalleryCards key={item.id} {...item} />
               ))}
             </div>
           ))}
