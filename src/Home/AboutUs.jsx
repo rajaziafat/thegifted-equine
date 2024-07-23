@@ -7,7 +7,7 @@ const AboutUs = () => {
       <Helmet>
         <Heading text="About Us" />
         <p className="text-xl text-center leading-relaxed px-20 mt-10 sm:px-0">
-          At The Gifted Equine (501c3 Nonprofit), we are dedicated to saving
+          At The Gifted Equine 501(c)(3) Nonprofit, we are dedicated to saving
           horses from the slaughter pipeline and other neglectful situations and
           providing them with the respect and high-quality care they deserve. We
           spend quality time with each individual horse; ensuring their physical

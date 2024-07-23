@@ -31,7 +31,7 @@ const Footer = () => {
             >
               <h3 className="text-2xl">Tax ID</h3>
               <p className="mt-3">
-                The Gifted Equine 501c3
+                The Gifted Equine 501(c)(3)
                 <br />
                 Non-Profit Foundation
                 <br />
