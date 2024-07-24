@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Heading from "../Components/Heading/Heading";
 import Helmet from "../Components/Helmet/Helmet";
 import GalleryData from "../Data/GalleryData";
-import { FaPlay } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 const Gallery = () => {
   return (
@@ -32,12 +32,12 @@ const GalleryCards = (props) => {
   };
   return (
     <div
-      className={`w-[330px] h-[500px] xsm:w-full relative ${props.height}`}
+      className={`w-[330px] h-[500px] xsm:w-full relative group ${props.height}`}
       onClick={() => openInNewWindow(props.source)}
       style={{ cursor: "pointer" }}
     >
-      <button className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 text-4xl text-white">
-        <FaPlay />
+      <button className="absolute top-[60%] left-1/2 -translate-x-1/2 translate-y-1/2 text-4xl text-white opacity-0 group-hover:opacity-100  duration-500 group-hover:!top-1/2">
+        <FaInstagram />
       </button>
       <img src={props.img} alt="" className="h-full w-full object-cover" />
     </div>
