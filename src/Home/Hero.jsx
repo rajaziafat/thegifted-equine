@@ -30,7 +30,7 @@ const Hero = () => {
           We Are Saving & Changing Lives
         </motion.h1>
         <motion.h2 {...fadeInFromLeft(0.5)} className="text-xl text-white ">
-          The Gifted Equine Foundation is a 501(c)3 nonprofit horse rescue.
+          The Gifted Equine Foundation is a 501(c)(3) nonprofit horse rescue.
           Saving America’s horsed who are neglected, abused & slaughter bound.
         </motion.h2>
         <Link
