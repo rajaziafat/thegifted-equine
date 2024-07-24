@@ -1,10 +1,10 @@
 import Button from "../Button/Button";
-import ProductsCard from "../ProductsCard/ProductsCard";
+import ProductsCard from "../EnquineCards/EnquineCards";
 import Heading from "../Heading/Heading";
 import Helmet from "../Helmet/Helmet";
 import Horses from "../../Data/Horses";
 
-const ProductsSection = (props) => {
+const EnquineSection = (props) => {
   return (
     <div className="py-20 bg-primary enquies">
       <Helmet>
@@ -25,4 +25,4 @@ const ProductsSection = (props) => {
   );
 };
 
-export default ProductsSection;
+export default EnquineSection;

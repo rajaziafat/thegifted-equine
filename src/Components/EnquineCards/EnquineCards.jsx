@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeInFromLeft } from "../../utils/helpers/Animation/Animation";
 
-const ProductsCard = (props) => {
+const EnquineCards = (props) => {
   return (
     <motion.div
       {...fadeInFromLeft(props.id * 0, 1)}
@@ -23,4 +23,4 @@ const ProductsCard = (props) => {
   );
 };
 
-export default ProductsCard;
+export default EnquineCards;

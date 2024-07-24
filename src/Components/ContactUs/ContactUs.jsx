@@ -7,15 +7,6 @@ import { fadeInFromLeft } from "../../utils/helpers/Animation/Animation";
 import { Parallax } from "react-scroll-parallax";
 
 const ContactUs = () => {
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "username",
-    Password: "password",
-    To: "them@website.com",
-    From: "you@isp.com",
-    Subject: "This is the subject",
-    Body: "And this is the body",
-  }).then((message) => alert(message));
   return (
     <div className="py-20 contact">
       <Helmet>
