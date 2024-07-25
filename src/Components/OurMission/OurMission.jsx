@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
 import Helmet from "../Helmet/Helmet";
-import {
-  fadeInFromLeft,
-  fadeInFromRight,
-} from "../../utils/helpers/Animation/Animation";
+import { fadeInFromLeft } from "../../utils/helpers/Animation/Animation";
 
 const OurMission = () => {
   return (
@@ -31,7 +28,7 @@ const OurMission = () => {
               individuals to recover and heal
             </motion.p>
           </div>
-          <motion.div {...fadeInFromRight(0.6)} className="w-1/2 md:w-full">
+          <motion.div {...fadeInFromLeft(0.6)} className="w-1/2 md:w-full">
             <img src="./mission.png" className="rounded-md" alt="" />
           </motion.div>
         </div>

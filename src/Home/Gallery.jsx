@@ -27,13 +27,44 @@ const Gallery = () => {
 };
 
 const GalleryCards = (props) => {
-  const openInNewWindow = (url) => {
-    window.open(url, "_blank", "width=600,height=600");
+  // const openInNewWindow = (url) => {
+  //   window.open(url, "_blank", "width=600,height=600");
+  // };
+  const openUrl = (url) => {
+    const userAgent = navigator.userAgent;
+    let instagramAppUrl;
+
+    // Determine if the URL is for a reel or a post
+    if (url.includes("/reel/")) {
+      const reelId = url.split("/reel/")[1].split("/")[0]; // Extract the reel ID
+      instagramAppUrl = `instagram://reel/${reelId}`;
+    } else {
+      // Fallback to the original URL if it doesn't match
+      instagramAppUrl = url.replace(
+        "https://www.instagram.com/",
+        "instagram://"
+      );
+    }
+
+    // Check for small device width
+    if (window.innerWidth < 540) {
+      // Attempt to open in Instagram app
+      window.location.href = instagramAppUrl;
+
+      // Fallback to web browser if the app is not installed
+      setTimeout(() => {
+        window.open(url, "_blank");
+      }, 500);
+    } else {
+      // For larger devices, open in a new tab
+      window.open(url, "_blank", "width=600,height=600");
+    }
   };
   return (
     <div
       className={`w-[330px] h-[500px] xsm:w-full relative group ${props.height}`}
-      onClick={() => openInNewWindow(props.source)}
+      onClick={() => openUrl(props.source)}
+      // onClick={() => openInNewWindow(props.source)}
       style={{ cursor: "pointer" }}
     >
       <button className="absolute top-[60%] left-1/2 -translate-x-1/2 translate-y-1/2 text-4xl text-white opacity-0 group-hover:opacity-100  duration-500 group-hover:!top-1/2">
