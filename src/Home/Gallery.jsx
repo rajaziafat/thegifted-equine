@@ -136,10 +136,9 @@ const GalleryCards = (props) => {
       window.open(getModifiedUrl(url), "_blank", "width=600,height=600");
     }
   };
-
   const getModifiedUrl = (url) => {
-    const postId = url.split("/").pop().split("?")[0];
-    return `https://www.instagram.com/p/${postId}/?igshid=1234567890`;
+    const postId = url.replace("/embed", "").split("/").pop().split("?")[0];
+    return `https://www.instagram.com/p/${postId}/?igshid=YzQ4NmFjNTljMzA0`;
   };
 
   return (
