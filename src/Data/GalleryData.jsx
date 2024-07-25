@@ -2,7 +2,7 @@ const GalleryData = [
   {
     id: 1,
     img: "/g1.jpg",
-    source: `https://www.instagram.com/reel/C9VmIzKSslV/embed?utm_source=https://sweet-mercies-rescue-ranch.vercel.app/`,
+    source: `https://shorturl.at/UMsVW`,
     height: "!h-[400px]",
   },
   {
