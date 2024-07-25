@@ -2,7 +2,7 @@ const GalleryData = [
   {
     id: 1,
     img: "/g1.jpg",
-    source: `https://shorturl.at/UMsVW`,
+    source: `https://www.instagram.com/reel/C9VmIzKSslV/embed`,
     height: "!h-[400px]",
   },
   {
