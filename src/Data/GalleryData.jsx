@@ -8,8 +8,8 @@ const GalleryData = [
   {
     id: 2,
     img: "/g2.jpg",
-    source: "",
-    height: "https://www.instagram.com/reel/C85FmHUPogh/embed",
+    source: "https://www.instagram.com/reel/C85FmHUPogh/embed",
+    height: "",
   },
   {
     id: 3,
