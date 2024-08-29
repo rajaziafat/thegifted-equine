@@ -16,7 +16,7 @@ const Home = () => {
       <Hero />
       <AboutUs />
       <OurMission />
-      <EnquineSection heading="Meet Our Equines" btnText="Meet All Enquies" />
+      <EnquineSection heading="Meet Our Equines" btnText="Meet All Equines" />
       <HowCanYouHelp />
       <Donate />
       <Gallery />
