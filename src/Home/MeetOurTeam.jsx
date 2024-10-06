@@ -36,8 +36,14 @@ const MeetOurTeam = () => {
           <TeamsCard
             img={`./t5.jpg`}
             name="Kiersten R"
-            desig="Tem "
+            desig="Team "
             delay={0.5}
+          />
+          <TeamsCard
+            img={`./t6.jpg`}
+            name="Brittany L"
+            desig="Team "
+            delay={0.6}
           />
         </div>
       </Helmet>
