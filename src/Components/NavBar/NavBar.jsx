@@ -132,9 +132,14 @@ const NavBar = () => {
               <Link
                 onClick={closeSideBar}
                 to=""
-                className="flex items-center cursor-pointer gap-2 bg-black text-white rounded-3xl h-[45px] w-[130px] justify-center hover:bg-white border-black border-2 duration-300 hover:text-black"
+                className="flex items-center cursor-pointer gap-2 bg-black text-white rounded-3xl h-[45px] w-[130px] justify-center hover:bg-white border-black border-2 relative duration-300 hover:text-black group"
               >
-                Merch
+                <span className="group-hover:opacity-0 duration-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center">
+                  Merch
+                </span>
+                <span className="opacity-0 group-hover:opacity-100 duration-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center">
+                  Coming Soon
+                </span>
               </Link>
             </li>
 
@@ -165,7 +170,7 @@ const NavBar = () => {
         className={`fixed h-full top-0 left-0 w-full    bg-black/65  duration-300 ${
           isSidebarOpen
             ? "lg:z-40 opacity-100 lg:block"
-            : "lg:-z-10 opacity-0 lg:hidden"
+            : "lg:-z-10 opacity-0 hidden"
         }`}
       ></div>
       <div

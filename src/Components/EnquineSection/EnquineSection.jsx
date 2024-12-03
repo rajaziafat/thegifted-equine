@@ -3,6 +3,7 @@ import ProductsCard from "../EnquineCards/EnquineCards";
 import Heading from "../Heading/Heading";
 import Helmet from "../Helmet/Helmet";
 import Horses from "../../Data/Horses";
+import { Link } from "react-router-dom";
 
 const EnquineSection = (props) => {
   return (
@@ -15,10 +16,15 @@ const EnquineSection = (props) => {
           })}
         </div>
         <div className="flex justify-center mt-10">
-          <Button
-            text={props.btnText}
-            className=" bg-black text-white border-white rounded-md text-lg hover:bg-white hover:text-black duration-300 "
-          />
+          <a
+            href={"https://www.instagram.com/thegiftedequine/profilecard/"}
+            target="_blank"
+          >
+            <Button
+              text={props.btnText}
+              className=" bg-black text-white border-white rounded-md text-lg hover:bg-white hover:text-black duration-300 "
+            />
+          </a>
         </div>
       </Helmet>
     </div>
