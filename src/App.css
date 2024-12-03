@@ -7,7 +7,9 @@
     flex: 25%;
   }
 }
-
+html {
+  overscroll-behavior: none;
+}
 @media (width <= 1024px) {
   .gallery-col {
     flex: 20%;

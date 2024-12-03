@@ -77,7 +77,7 @@
 
 // export default Gallery;
 
-import React, { useState } from "react";
+import Countdown from "../Components/CountDown/CountDown";
 import Heading from "../Components/Heading/Heading";
 import Helmet from "../Components/Helmet/Helmet";
 import GalleryData from "../Data/GalleryData";
@@ -85,9 +85,17 @@ import { FaInstagram } from "react-icons/fa";
 
 const Gallery = () => {
   return (
-    <div className="pb-10 gallery">
+    <div className="py-16 gallery">
       <Helmet>
         <Heading text="Gallery" />
+        {/* <div className="">
+          <img
+            className="size-72"
+            src="https://www.instagram.com/thegiftedequine/profilecard/"
+            alt=""
+          />
+          <Countdown />
+        </div> */}
         <div className="w-full mt-16 flex flex-wrap sm:gap-y-5">
           {[0, 4, 8, 12].map((startIdx) => (
             <div
