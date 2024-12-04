@@ -25,7 +25,7 @@ const NavBar = () => {
   };
   return (
     <>
-      <div className="bg-black py-2 w-full flex justify-center items-center gap-1 px-4">
+      {/* <div className="bg-black py-2 w-full flex justify-center items-center gap-1 px-4">
         <h4 className="text-white text-xl sm:text-lg">
           Total Lives Rescued: See Our Impact
         </h4>
@@ -40,7 +40,7 @@ const NavBar = () => {
             suffix="+"
           />
         </h4>
-      </div>
+      </div> */}
       <nav className="flex justify-center items-center h-24 z-40 backdrop-blur-lg shadow-xl bg-[#FFFFFF]  w-full sticky top-0 left-0">
         <div className="flex justify-between w-11/12 max-w-[1400px]">
           <Link to="hero" smooth={true} className="cursor-pointer">
