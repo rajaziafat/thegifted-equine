@@ -9,11 +9,15 @@ import Gallery from "./Gallery";
 import Hero from "./Hero";
 import HowCanYouHelp from "./HowCanYouHelp";
 import MeetOurTeam from "./MeetOurTeam";
+import Video from "./Video";
+import Counter from "./Counter";
 const Home = () => {
   return (
     <>
       <NavBar />
       <Hero />
+      <Video />
+      <Counter />
       <AboutUs />
       <OurMission />
       <EnquineSection heading="Meet Our Equines" btnText="Meet All Equines" />

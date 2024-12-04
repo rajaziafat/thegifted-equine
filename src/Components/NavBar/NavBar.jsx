@@ -8,6 +8,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { fadeInFromLeft } from "../../utils/helpers/Animation/Animation";
 import CountUp from "react-countup";
+import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
+import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 
 const NavBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -31,7 +33,7 @@ const NavBar = () => {
           <CountUp
             start={0}
             delay={1}
-            end={120}
+            end={48}
             duration={16}
             decimals={0}
             className="font-sans"
@@ -49,7 +51,6 @@ const NavBar = () => {
               alt=""
             />
           </Link>
-
           <ul className="flex gap-4 items-center lg:hidden ">
             <li>
               <Link
