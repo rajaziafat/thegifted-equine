@@ -43,6 +43,12 @@ const Horses = [
   { id: 42, name: "Cash", img: "/cash.jpg" },
   { id: 43, name: "Jackson", img: "/jackson.jpg" },
   { id: 44, name: "Arthur", img: "/arthur.jpg" },
+  { id: 45, name: "Sister", img: "/sister.jpg" },
+  { id: 46, name: "Joe", img: "/joe.jpg" },
+  { id: 47, name: "Poncho", img: "/poncho.jpg" },
+  { id: 48, name: "Scarlett", img: "/scarlett.jpg" },
+  { id: 49, name: "Lincoln", img: "/lincoln.jpg" },
 ];
+// { id: 45, name: "", img: "/.jpg" },
 
 export default Horses;
