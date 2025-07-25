@@ -48,6 +48,10 @@ const Horses = [
   { id: 47, name: "Poncho", img: "/poncho.jpg" },
   { id: 48, name: "Scarlett", img: "/scarlett.jpg" },
   { id: 49, name: "Lincoln", img: "/lincoln.jpg" },
+  { id: 50, name: "Senora", img: "/senora.jpg" },
+  { id: 51, name: "Calvin", img: "/calvin.jpg" },
+  { id: 52, name: "Boomer", img: "/boomer.jpg" },
+  { id: 53, name: "Dorothy & Tootsie", img: "/dorothy.jpg" },
 ];
 // { id: 45, name: "", img: "/.jpg" },
 
