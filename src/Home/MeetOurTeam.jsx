@@ -21,30 +21,36 @@ const MeetOurTeam = () => {
             desig="Lead Advisor"
             delay={0.2}
           />
-          <TeamsCard
+          {/* <TeamsCard
             img={`./t3.jpeg`}
             name="Heather C"
             desig="Farm Manager"
             delay={0.3}
-          />
+          />  */}
           <TeamsCard
             img={`./t4.png`}
             name="Hayden B"
             desig="Logistics + Operations"
-            delay={0.4}
+            delay={0.3}
           />
           <TeamsCard
+            img={`./t7.jpg`}
+            name="Savannah G"
+            desig="Team/Trainer"
+            delay={0.4}
+          />
+          {/* <TeamsCard
             img={`./t5.jpg`}
             name="Kiersten R"
             desig="Team "
             delay={0.5}
-          />
-          <TeamsCard
+          /> */}
+          {/* <TeamsCard
             img={`./t6.jpg`}
             name="Brittany L"
             desig="Team "
             delay={0.6}
-          />
+          /> */}
         </div>
       </Helmet>
     </div>

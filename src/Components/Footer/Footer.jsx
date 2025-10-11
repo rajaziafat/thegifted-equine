@@ -23,7 +23,7 @@ const Footer = () => {
               className="text-white flex flex-col flex-wrap content-center sm:text-center"
             >
               <h3 className="text-2xl">Our Location</h3>
-              <address className="not-italic mt-3">Texas & Ohio</address>
+              <address className="not-italic mt-3">Texas</address>
             </motion.div>
             <motion.div
               {...fadeInFromLeft(0.2)}
