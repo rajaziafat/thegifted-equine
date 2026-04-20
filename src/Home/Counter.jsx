@@ -10,12 +10,12 @@ const Counter = () => {
         <div className="w-full grid grid-cols-3 md:grid-cols-1 md:gap-y-9 gap-5">
           <CounterCard
             title="Horses & Donkeys Rescued"
-            number={69}
+            number={80}
             icon={<Horse width={"w-20"} />}
           />
           <CounterCard
             title="Horses & Donkeys Adopted"
-            number={44}
+            number={56}
             icon={<Donkey width={"w-20"} />}
           />
           <CounterCard title="Sanctuary Horses" number={5} />
