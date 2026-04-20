@@ -196,14 +196,14 @@ const NavBar = () => {
         {/* Slide Menu  For Small Devices*/}
       </nav>
       <div
-        className={`fixed h-full top-0 left-0 w-full    bg-black/65  duration-300 ${
+        className={`fixed h-full top-0  left-0 w-full    bg-black/65  duration-300 ${
           isSidebarOpen
             ? "lg:z-40 opacity-100 lg:block"
             : "lg:-z-10 opacity-0 hidden"
         }`}
       ></div>
       <div
-        className={`fixed z-40  top-0 right-0 hidden lg:flex justify-center items-center py-4 overflow-y-auto min-h-screen  bg-white  duration-300 sm:w-full w-[400px] ${
+        className={`fixed z-40 top-0 right-0 hidden lg:flex flex-col py-4 overflow-y-auto h-screen bg-white duration-300 sm:w-full w-[400px] ${
           isSidebarOpen
             ? "-translate-x-0"
             : "translate-x-[400px] sm:translate-x-full"
@@ -216,7 +216,7 @@ const NavBar = () => {
         >
           <AiOutlineClose />
         </button>
-        <ul className="flex flex-col gap-y-8 items-center w-full justify-center min-h-full">
+        <ul className="flex flex-col gap-y-8 items-center w-full overflow-y-auto px-4 mt-16">
           <li>
             <Link
               onClick={closeSideBar}
