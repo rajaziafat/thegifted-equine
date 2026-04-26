@@ -128,7 +128,7 @@ const NavBar = () => {
                 smooth={true}
                 offset={-100}
               >
-                Meet Our Team
+                Our Team
               </Link>
             </li>
 
@@ -279,7 +279,7 @@ const NavBar = () => {
               smooth={true}
               offset={-100}
             >
-              Meet Our Team
+              Our Team
             </Link>
           </li>
           <li>
