@@ -28,7 +28,7 @@ const MeetOurTeam = () => {
             delay={0.3}
           />  */}
           <TeamsCard
-            img={`./t4.png`}
+            img={`./t4.jpeg`}
             name="Hayden B"
             desig="Logistics + Operations"
             delay={0.3}
