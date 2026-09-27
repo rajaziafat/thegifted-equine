@@ -1,6 +1,7 @@
 import { CiMenuFries } from "react-icons/ci";
 import { IoBagHandleSharp } from "react-icons/io5";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 import useScrollLock from "../../Hooks/UseScrollLock";
 import { useRef, useState } from "react";
 import useClickOutsideDetector from "../../Hooks/useClickOutsideDetector";
@@ -11,6 +12,18 @@ import CountUp from "react-countup";
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import { HiOutlineChevronDown } from "react-icons/hi";
+
+// Nav targets are either home page sections ("about") or page paths
+// ("/our-equines"). From another page, section links go home first and
+// Home scrolls to the section.
+const Link = ({ to, smooth, offset, ...props }) => {
+  const { pathname } = useLocation();
+  if (to.startsWith("/")) return <RouterLink to={to} {...props} />;
+  if (pathname === "/") {
+    return <ScrollLink to={to} smooth={smooth} offset={offset} {...props} />;
+  }
+  return <RouterLink to="/" state={{ scrollTo: to, offset }} {...props} />;
+};
 
 const NavBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -32,7 +45,7 @@ const NavBar = () => {
   });
 
   const equineOptions = [
-    { label: "Our Equines", to: "" },
+    { label: "Our Equines", to: "/our-equines" },
     { label: "Available for Adoption", to: "adoption" },
     { label: "Adopted Equines", to: "" },
     { label: "In Loving Memory", to: "" },
@@ -60,7 +73,7 @@ const NavBar = () => {
           <Link to="hero" smooth={true} className="cursor-pointer">
             <motion.img
               {...fadeInFromLeft()}
-              src="./Logo.png"
+              src="/Logo.png"
               className="w-20 h-20 object-contain"
               alt=""
             />
