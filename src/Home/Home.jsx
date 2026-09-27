@@ -4,6 +4,7 @@ import NavBar from "../Components/NavBar/NavBar";
 // import OurMission from "../Components/OurMission/OurMission";
 import EnquineSection from "../Components/EnquineSection/EnquineSection";
 import AboutUs from "./AboutUs";
+import AvailableForAdoption from "./AvailableForAdoption";
 import Donate from "./Donate";
 import Gallery from "./Gallery";
 import Hero from "./Hero";
@@ -20,6 +21,7 @@ const Home = () => {
       <Counter />
       <AboutUs />
       {/* <OurMission /> */}
+      <AvailableForAdoption />
       <EnquineSection heading="Meet Our Equines" btnText="Meet All Equines" />
       <HowCanYouHelp />
       <Donate />

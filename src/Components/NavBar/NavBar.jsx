@@ -33,7 +33,7 @@ const NavBar = () => {
 
   const equineOptions = [
     { label: "Our Equines", to: "" },
-    { label: "Available for Adoption", to: "" },
+    { label: "Available for Adoption", to: "adoption" },
     { label: "Adopted Equines", to: "" },
     { label: "In Loving Memory", to: "" },
   ];
@@ -176,7 +176,19 @@ const NavBar = () => {
                   >
                     {equineOptions.map((item, index) => (
                       <li key={index} className="cursor-pointer">
-                        {item.label}
+                        {item.to ? (
+                          <Link
+                            to={item.to}
+                            smooth={true}
+                            offset={-100}
+                            onClick={() => setShowDropdown(false)}
+                            className="hover:text-gray-600 duration-300"
+                          >
+                            {item.label}
+                          </Link>
+                        ) : (
+                          item.label
+                        )}
                       </li>
                     ))}
                   </motion.ul>
@@ -331,7 +343,18 @@ const NavBar = () => {
                       className="cursor-pointer text-center py-1 "
                       onClick={closeSideBar}
                     >
-                      {item.label}
+                      {item.to ? (
+                        <Link
+                          to={item.to}
+                          smooth={true}
+                          offset={-100}
+                          onClick={closeSideBar}
+                        >
+                          {item.label}
+                        </Link>
+                      ) : (
+                        item.label
+                      )}
                     </li>
                   ))}
                 </motion.ul>

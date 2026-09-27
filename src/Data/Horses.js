@@ -69,13 +69,8 @@ const Horses = [
   { id: 67, name: "Priscilla", img: "/Priscilla.jpeg" },
   { id: 68, name: "Lady Bug", img: "/LadyBug.jpeg" },
   { id: 69, name: "Harlow", img: "/Harlow.jpeg" },
-  { id: 70, name: "Johnny", img: "/Johnny.jpeg", fit: "contain" },
-  { id: 71, name: "Uno", img: "/Uno.jpeg", fit: "contain" },
-  { id: 72, name: "Valor", img: "/Valor.jpeg" },
-  { id: 73, name: "Eugene", img: "/Eugene.jpeg", position: "center 18%" },
-  { id: 74, name: "Hogan", img: "/Hogan.jpeg" },
-  { id: 75, name: "Ellie Mae", img: "/EllieMae.jpeg", position: "center 15%" },
-  { id: 76, name: "Zella", img: "/Zella.jpeg" },
+  // { id: 70, name: "", img: "/.jpeg" },
+  // { id: 71, name: "", img: "/" },
 ];
 // { id: 45, name: "", img: "/.jpg" },
 
